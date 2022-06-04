@@ -1,15 +1,15 @@
 {
-  "name": "@micra/{{{ NAME }}}",
+  "name": "@micra/router",
   "version": "0.1.0-next.0",
-  "description": "{{{ DESCRIPTION }}}",
+  "description": "Micra's router.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/micrajs/{{{ NAME }}}.git"
+    "url": "git+https://github.com/micrajs/router.git"
   },
   "author": "Olavo Amorim Santos<olavo.santos@micra.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/micrajs/community/issues?q=is:issue+is:open+label:%22Project:+{{{ NAME }}}%22+label:%22Type:+fix%22"
+    "url": "https://github.com/micrajs/community/issues?q=is:issue+is:open+label:%22Project:+router%22+label:%22Type:+fix%22"
   },
   "scripts": {
     "build:code": "vite build --config .viterc.ts",
