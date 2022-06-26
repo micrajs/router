@@ -1,7 +1,4 @@
-import {installGlobals} from '@remix-run/node/globals';
 import {BaseRouter} from '../BaseRouter';
-
-installGlobals();
 
 declare global {
   namespace Application {
@@ -15,7 +12,7 @@ declare global {
     }
 
     /** It registers a router triggered on GET requests */
-    type GetRouteDefinition = Micra.RouteDefinition;
+    type GetRouteDefinition = Micra.RouteCreator;
     interface Routers {
       get: GetRouteDefinition;
     }

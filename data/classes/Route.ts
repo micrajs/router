@@ -1,6 +1,6 @@
 import type {PathOptions} from '@micra/core/utilities/PathParams';
 import {generateId} from '../utilities/generateId';
-import { RoutePath } from "./RoutePath.1";
+import {RoutePath} from './RoutePath';
 import {RouteRegistry} from './RouteRegistry';
 
 export type RouteOptions<
