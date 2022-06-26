@@ -9,5 +9,5 @@
       "@/*": ["*"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.d.ts"]
+  "include": ["**/*.ts", "**/*.tsx", "**/*.d.ts", "../core/router/index.ts", "../../playground/path-to-regexp-lexer.ts"]
 }
