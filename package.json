@@ -27,10 +27,13 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
-    "@micra/commit-lint-config": "^0.1.0-next.1",
-    "@micra/eslint-config": "^0.1.0-next.1",
-    "@micra/typescript-config": "^0.1.0-next.1",
-    "@micra/vite-config": "^0.1.0-next.2",
+    "@micra/commit-lint-config": "next",
+    "@micra/core": "next",
+    "@micra/core-test-utils": "next",
+    "@micra/eslint-config": "next",
+    "@micra/faker": "next",
+    "@micra/typescript-config": "next",
+    "@micra/vite-config": "next",
     "@types/node": "^17.0.21",
     "c8": "^7.11.0",
     "concurrently": "^7.0.0",
@@ -44,5 +47,8 @@
     "typescript": "^4.6.2",
     "vite": "^2.8.6",
     "vitest": "^0.6.1"
+  },
+  "dependencies": {
+    "path-to-regexp": "^6.2.1"
   }
 }
