@@ -1,5 +1,4 @@
 import type {PathOptions} from '@micra/core/utilities/PathParams';
-import {generateId} from '../utilities/generateId';
 import {RoutePath} from './RoutePath';
 import {RouteRegistry} from './RouteRegistry';
 
@@ -29,9 +28,20 @@ export class Route<
     methods = [],
     middlewares = [],
   }: RouteOptions<Path, Options>) {
-    const id = generateId('route');
     Object.defineProperty(this, 'id', {
-      get: () => id,
+      get: () =>
+        [
+          this.path.definition,
+          this.methods.join('|'),
+          typeof this.handler === 'string' ? this.handler : this.handler.name,
+          this.nested.findAll().length,
+          this.middlewares
+            .map((middleware) =>
+              typeof middleware === 'string' ? middleware : middleware.name,
+            )
+            .join('|'),
+          this.name,
+        ].join('-'),
     });
     this.nested = new RouteRegistry();
     this.handler = handler;
