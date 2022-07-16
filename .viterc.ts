@@ -5,6 +5,7 @@ export default defineConfig({
     rollupOptions: {
       external: [
         'path-to-regexp',
+        '@micra/error',
       ],
     },
   },

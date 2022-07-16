@@ -49,6 +49,7 @@
     "vitest": "^0.6.1"
   },
   "dependencies": {
+    "@micra/error": "0.1.0-next.7",
     "path-to-regexp": "^6.2.1"
   }
 }
