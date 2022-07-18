@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import {HTTPError, isMicraError, WrappedError} from '@micra/error';
-import {error} from '@micra/request-handler/data/utilities/error';
+import {error} from './error';
 import {resolveFromContainer} from './resolveFromContainer';
 
 export interface OnChangeEvent {

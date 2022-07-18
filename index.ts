@@ -6,3 +6,4 @@ export * from '@/data/classes/RoutePath';
 export * from '@/data/classes/RouteRegistry';
 export * from '@/data/utilities/generateId';
 export * from '@/data/utilities/executeRouteHandler';
+export * from '@/data/utilities/resolveFromContainer';
