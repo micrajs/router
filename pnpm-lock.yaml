@@ -3,11 +3,12 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^16.2.1
   '@micra/commit-lint-config': next
-  '@micra/core': 0.1.0-next.17
+  '@micra/core': next
   '@micra/core-test-utils': next
-  '@micra/error': 0.1.0-next.7
+  '@micra/error': next
   '@micra/eslint-config': next
   '@micra/faker': next
+  '@micra/request-handler': next
   '@micra/typescript-config': next
   '@micra/vite-config': next
   '@types/node': ^17.0.21
@@ -26,18 +27,19 @@ specifiers:
   vitest: ^0.6.1
 
 dependencies:
-  '@micra/error': 0.1.0-next.7
+  '@micra/error': 0.1.0-next.8
+  '@micra/request-handler': 0.1.0-next.6
   path-to-regexp: 6.2.1
 
 devDependencies:
   '@commitlint/cli': 16.2.1
   '@micra/commit-lint-config': 0.1.0-next.1_@commitlint+cli@16.2.1
-  '@micra/core': 0.1.0-next.17
-  '@micra/core-test-utils': 0.1.0-next.5_xa2bdh2qjnvw7epotn32vrcfui
+  '@micra/core': 0.1.0-next.19
+  '@micra/core-test-utils': 0.1.0-next.5_pn5ae6ccj6babb73pievv7kevu
   '@micra/eslint-config': 0.1.0-next.1_qo6aclrcuraztg6h4usgnbrzbe
   '@micra/faker': 0.1.0-next.3
   '@micra/typescript-config': 0.1.0-next.1
-  '@micra/vite-config': 0.1.0-next.4_iggmyam2welnlf75gonjlwkwxq
+  '@micra/vite-config': 0.1.0-next.5_iggmyam2welnlf75gonjlwkwxq
   '@types/node': 17.0.21
   c8: 7.11.0
   concurrently: 7.0.0
@@ -296,23 +298,22 @@ packages:
       '@commitlint/config-conventional': 16.2.1
     dev: true
 
-  /@micra/core-test-utils/0.1.0-next.5_xa2bdh2qjnvw7epotn32vrcfui:
+  /@micra/core-test-utils/0.1.0-next.5_pn5ae6ccj6babb73pievv7kevu:
     resolution: {integrity: sha512-8aLIU6nd3hxOgJ6beE+a16CnpPgsOGZwiiSZ51G4wPiOSEGJgAzc5whH5OPWKh/QSwQg0UFpHITuM9h6/qvReA==}
     peerDependencies:
       '@micra/core': next
       '@micra/faker': next
     dependencies:
-      '@micra/core': 0.1.0-next.17
+      '@micra/core': 0.1.0-next.19
       '@micra/faker': 0.1.0-next.3
       tinyspy: 0.3.2
     dev: true
 
-  /@micra/core/0.1.0-next.17:
-    resolution: {integrity: sha512-D7PUQMUS/Ta40F6oSG7+RZG6qo8PdKemAdync++t181zh5LwS+krRfdjoOUL0tUURWxxhdccPPrpDGwUPsdyDw==}
-    dev: true
+  /@micra/core/0.1.0-next.19:
+    resolution: {integrity: sha512-s/zpLeiMKfePR2CAmMPgOk3IlOlyUSjlK6yMxXfb804aRAgiZbrzjUWfwpunyg8UX/51EJ6RDF12mSQLCUq2WQ==}
 
-  /@micra/error/0.1.0-next.7:
-    resolution: {integrity: sha512-TSX2UEYz5zuXgbjN4wDeFWlPpWIvAnBJp24VfPOtgeH5N+2SCCrcvjsNBh0tX9ZdDz6wtwDN33gHr0vQ/OOFQg==}
+  /@micra/error/0.1.0-next.8:
+    resolution: {integrity: sha512-iHeX+IhFlNuWcczXfeAJEYoVWG6cTARETB7+WNiDJIlWojLNnXUwmSK/Low7XaMzyNeEZdXE7AJtdMHZ9Ry8rQ==}
     dev: false
 
   /@micra/eslint-config/0.1.0-next.1_qo6aclrcuraztg6h4usgnbrzbe:
@@ -336,12 +337,19 @@ packages:
     resolution: {integrity: sha512-+5MmJTSqfYfaMxlxaw/+0gB7x3RXACForKwHBbjBAoScYHIrLxkPuEuTKoUgUuMIWZCp0RyOyvShpCn8x1lYCQ==}
     dev: true
 
+  /@micra/request-handler/0.1.0-next.6:
+    resolution: {integrity: sha512-M2kjbWU9ytREpKl8f0FXUId2fS41H1lbDxQ2BmXwfHFEPRUEp+MUSvPtQmLLe405XMCZcCWiLpLoI1hCz3KE6A==}
+    dependencies:
+      '@micra/core': 0.1.0-next.19
+      '@micra/error': 0.1.0-next.8
+    dev: false
+
   /@micra/typescript-config/0.1.0-next.1:
     resolution: {integrity: sha512-lM/ODpxkl8aQkGZI846QyG4Hsp0a4meuWH8Vj24ixJ2Q8T5DfIJ3BTHv4N50/qYXdrtbQvCgyda9/LYimXcynQ==}
     dev: true
 
-  /@micra/vite-config/0.1.0-next.4_iggmyam2welnlf75gonjlwkwxq:
-    resolution: {integrity: sha512-+h330gJEzagSC9zkTcyclToqm8SI5opqDN05ItQo9rQN/s5kKjyA/GeVPemwB+iFyQp11t5wekbol3SlcMMcXA==}
+  /@micra/vite-config/0.1.0-next.5_iggmyam2welnlf75gonjlwkwxq:
+    resolution: {integrity: sha512-jfGdpURsgDxoFfvNaSG2Hr0avZSFMTx/P+y3RwUR3BaIrmryL6HI36K50nueojFj23Kjbqs25+0iERAbUdwqOg==}
     peerDependencies:
       c8: '>= 7'
       vite: '>= 2'

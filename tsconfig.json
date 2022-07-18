@@ -3,19 +3,12 @@
   "compilerOptions": {
     "declaration": true,
     "emitDeclarationOnly": true,
-    "types": [
-      "vitest/globals"
-    ],
+    "skipLibCheck": true,
+    "types": ["vitest/globals"],
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "*"
-      ]
+      "@/*": ["*"]
     }
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.d.ts"
-  ]
+  "include": ["**/*.ts", "**/*.tsx", "**/*.d.ts"]
 }
